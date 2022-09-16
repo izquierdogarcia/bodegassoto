@@ -824,6 +824,11 @@ pre code {
   }
 }
 /*TABLETS*/
+@media (min-width: 768px) and (max-width: 1120px) {
+  #custom-text {
+    column-count: 2 !important; 
+  }
+}
 @media (min-width: 768px) and (max-width: 1210px) {
   #search_widget {
     margin: 3%;  
@@ -8937,6 +8942,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   background-image: url(../../../../img/images/lightWood.png);  
   background-attachment: fixed;
   column-count: 3;
+  widows: 2;
   /*filter: brightness(110%);*/
   /*text-shadow: 1px 1px 2px black;*/
 }
