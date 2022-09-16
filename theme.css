@@ -766,11 +766,14 @@ pre code {
   }*/
   .logo{
     position: absolute;
-    width: 100px;
+    width: 150px;
     left: 60px;
     }
     .hidden-sm-down {
       display: none;
+    }
+    .hidden-md-up.text-sm-center.mobile {
+      padding: 0 1em;
     }
 }
 
