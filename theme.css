@@ -724,9 +724,6 @@ pre code {
   .footer-container .container{
     margin-left: 1em;
   }
-  .col-md-12 .text-sm-center{
-    visibility: hidden;
-  }
   #_mobile_cart {
     margin-right: 1em;
   }
@@ -957,13 +954,10 @@ pre code {
   display: table;
   clear: both;
 }
-@media (max-width: 580px) { /*Esto es una prueba*/
+@media (max-width: 580px) { 
   .row {
       margin-right: -15px;
       margin-left: -15px;      
-  }
-  .container .row .col-md-12 {
-    margin-top:0.5em;
   }
   #wrapper {
     padding-top:0;
@@ -11734,4 +11728,7 @@ div#contact-infos a:hover{
 }
 #_desktop_user_info .user-info a{
   color: grey;
+}
+.container .row .col-md-12 { /*Para darle espacio a especie digital*/
+  margin-top:0.5em;
 }
