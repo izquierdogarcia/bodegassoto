@@ -738,7 +738,7 @@ pre code {
     margin: auto auto;
   }
   #_mobile_logo h1 {
-    position: absolute;
+    /*position: absolute;*/ /*Soluciona fallo logo en 576px*/
     width: 36em;
   }
   #custom-text {
