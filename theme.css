@@ -4194,10 +4194,12 @@ tbody.collapse.in {
       position: static;
       float: none;
   }
+  .banner .img-fluid{
+	  margin-left: -25%;
+	}
   .img-fluid, .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
     max-width: 150%;
     height: auto;
-    margin-left: -25%;
   }
 }
 @media (min-width: 768px) {
