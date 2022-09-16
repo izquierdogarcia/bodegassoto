@@ -960,10 +960,11 @@ pre code {
 @media (max-width: 580px) {
   .row {
       margin-right: -15px;
-      margin-left: -15px;
-      margin-top:0.5em;
+      margin-left: -15px;      
   }
-
+  .container .row .col-md-12 {
+    margin-top:0.5em;
+  }
   #wrapper {
     padding-top:0;
   }
