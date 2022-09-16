@@ -957,7 +957,7 @@ pre code {
   display: table;
   clear: both;
 }
-@media (max-width: 580px) {
+@media (max-width: 580px) { /*Esto es una prueba*/
   .row {
       margin-right: -15px;
       margin-left: -15px;      
