@@ -7400,7 +7400,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 #mobile_top_menu_wrapper .top-menu a[data-depth="0"] {
   padding: 0.625rem;
-  border-bottom: 1px solid #f6f6f6;
+  /*border-bottom: 1px solid #f6f6f6;*/ /*Corregir borde inferior menú versión móvil*/
 }
 #mobile_top_menu_wrapper .top-menu .collapse {
   display: none;
