@@ -750,9 +750,9 @@ pre code {
     text-align: center;
     
   }
-  /*.img-fluid {
-    display: none;
-  }*/
+  .content .banner .img-fluid {
+    width: 150%;
+  }
   /*#wrapper .banner {    
     height: 8em;
     background-color: black;
@@ -4193,6 +4193,11 @@ tbody.collapse.in {
   .navbar-toggleable-sm .navbar-nav .dropdown-menu {
       position: static;
       float: none;
+  }
+  .img-fluid, .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+    max-width: 150%;
+    height: auto;
+    margin-left: -25%;
   }
 }
 @media (min-width: 768px) {
