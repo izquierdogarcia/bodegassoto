@@ -9070,6 +9070,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   text-align: right;
   /*word-break: break-word;*/ /*Para que no se rompan las palabras*/
   white-space: normal;
+  min-width: fit-content;
 }
 .products-selection .total-products {
   padding-top: 0.625rem;
@@ -9324,6 +9325,8 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   padding: 1.563rem 1.25rem;
   margin-bottom: 1.563rem;
   background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  min-width: fit-content;
 }
 .block-categories .h6 {
   font-size: 1.5rem;
