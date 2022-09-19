@@ -861,7 +861,7 @@ pre code {
   #_desktop_logo {
     width: 50%;
   }
-  #content .container .row .col-12 table tbody tr td {
+  #content .container .row .col-12 table tbody tr td, #content .container .row .col-8 table tbody tr td {
     display: block;
   }
   .container {
@@ -4244,11 +4244,22 @@ tbody.collapse.in {
       position: static;
       float: none;
   }
+  #content table tbody tr {
+    display: block;
+  }
+  #content .container .row table tbody tr td {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
 }
 @media (min-width: 1200px) {
   .navbar-toggleable-lg {
       display: block;
   }  
+  #content table tbody tr {
+    display: flex;
+  }
 }
 
 @media (min-width: 1133px) { /*Especial para el ancho del banner*/
@@ -8655,6 +8666,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   .carousel .carousel-item .caption .caption-description h3 {
     display: none;
   }
+
 }
 @media (max-width: 991px) {
   .carousel {
@@ -8979,6 +8991,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   padding: 1.25rem;
   /*text-align: justify;*/
   background: #fff;
+  min-width: fit-content;
 }
 .page-content.page-cms .cms-box img {
   max-width: 100%;
@@ -11724,9 +11737,7 @@ div#contact-infos a:hover{
   padding: 1em;
 }*/
 
-#content table tbody tr {
-  display: flex;
-}
+
 
 #wrapper .container #content-wrapper #main .page-header h1 {
   display: none; /*Para quitar "Nuestra bodega"*/
