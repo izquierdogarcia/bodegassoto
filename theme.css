@@ -198,7 +198,14 @@ sup {
   top: -0.5em;
 }
 img {
-  border-style: none;
+  border-style: none;  
+}
+table tbody tr td img { /*Para imágenes de "Nuestra bodega"*/
+  width: 100%;
+  height: auto;
+}
+.container .row table {
+  width: 100%;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -860,10 +867,7 @@ pre code {
   }
   #_desktop_logo {
     width: 50%;
-  }
-  #content .container .row .col-12 table tbody tr td, #content .container .row .col-8 table tbody tr td {
-    display: block;
-  }
+  }  
   .container {
     width: 100%;
     /*margin-left: 1% !important;
@@ -4251,7 +4255,9 @@ tbody.collapse.in {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    display: block;
   }
+  
 }
 @media (min-width: 1200px) {
   .navbar-toggleable-lg {
