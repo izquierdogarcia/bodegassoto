@@ -981,7 +981,7 @@ pre code {
   margin-left: -15px;
 }
 .row::after {
-  content: "";
+  /*content: "";*/
   display: table;
   clear: both;
 }
@@ -11889,4 +11889,7 @@ section.product-accessories.clearfix { /*Para centrar los productos recomendados
 }
 #product #main .featured-products h2 {
   padding-bottom: 2em; 
+}
+#contact #content .contact-form section.form-fields {
+  display: grid;
 }
