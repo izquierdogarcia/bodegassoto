@@ -713,6 +713,11 @@ pre code {
   #category #subcategories ul {
     display: flex;
     flex-wrap: nowrap;
+  }  
+}
+@media (max-width:465px) {
+  .row.product-container.js-product-container {
+    width: 98% !important;
   }
 }
 
@@ -726,8 +731,7 @@ pre code {
   .all-product-link{
     float:right !important;  
     margin-right: 3em;  
-  }  
-  
+  }    
   #wrapper .banner {    
     margin-bottom: 0px !important;
     width: 100%;
@@ -758,8 +762,7 @@ pre code {
   #custom-text h2 {
     font-size: 2.5em;
     font-weight: 500;
-    text-align: center;
-    
+    text-align: center;    
   }
   .content .banner .img-fluid {
     width: 150%;
@@ -775,6 +778,18 @@ pre code {
     .hidden-md-up.text-sm-center.mobile {
       padding: 0 1em;
     }
+    /*.row.product-container.js-product-container {
+      width: 80%;
+    }*/
+}
+
+@media (max-width: 662px) {
+  #products .products, .featured-products .products, .product-accessories .products {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+  }
 }
 
 /*TABLETS Y PHABLETS*/
@@ -835,6 +850,12 @@ pre code {
   }
   .hidden-md-up.text-sm-center.mobile {
     padding: 0 2em;
+  }
+}
+@media (min-width: 768px) {
+  body#checkout #header .header-nav .logo { /*Solo afecta al proceso de compra*/
+    width: auto; 
+    max-height: 4.375rem;
   }
 }
 /*TABLETS*/
@@ -6907,6 +6928,7 @@ textarea:active:-moz-placeholder {
   display: inline-block;
   float: left;
   width: auto;
+  min-width: 71px; /*En la página de producto, que no se separe la caja de cantidad de las flechas*/
 }
 .bootstrap-touchspin input:focus {
   outline: none;
@@ -7564,10 +7586,7 @@ body#checkout #header .header-nav {
   margin-bottom: 0;
   border: none;
 }
-body#checkout #header .header-nav .logo {
-  width: auto;
-  max-height: 4.375rem;
-}
+
 body#checkout #header .header-nav #_desktop_contact_link #contact-link {
   margin-top: 0;
    
@@ -11833,9 +11852,9 @@ div#contact-infos a:hover{
 h1.step-title.js-step-title.h3 {
   color: #232323;
 }
-#wrapper .container #content-wrapper #content .row .cart-grid-body {
+/*#wrapper .container #content-wrapper #content .row .cart-grid-body {
   margin-left: 15%
-}
+}*/
 .wishlist-container { /*Afecta a las listas de listas de deseos*/
   width: 80%;
   margin: auto;
