@@ -709,18 +709,6 @@ pre code {
 
 /*BLOQUE MEDIA QUERIES*/
 
-@media (min-width: 320px) { /*Esto afecta al recuadro rojo de las categorías, para elegir entre aguardiente y crema por ejemplo*/
-  #category #subcategories ul {
-    display: flex;
-    flex-wrap: nowrap;
-  }  
-}
-@media (max-width:465px) {
-  .row.product-container.js-product-container {
-    width: 98% !important;
-  }
-}
-
 @media (max-width: 576px) {
   #carousel h2{
     font-size: 2em;
@@ -731,7 +719,8 @@ pre code {
   .all-product-link{
     float:right !important;  
     margin-right: 3em;  
-  }    
+  }  
+  
   #wrapper .banner {    
     margin-bottom: 0px !important;
     width: 100%;
@@ -762,7 +751,8 @@ pre code {
   #custom-text h2 {
     font-size: 2.5em;
     font-weight: 500;
-    text-align: center;    
+    text-align: center;
+    
   }
   .content .banner .img-fluid {
     width: 150%;
@@ -778,18 +768,6 @@ pre code {
     .hidden-md-up.text-sm-center.mobile {
       padding: 0 1em;
     }
-    /*.row.product-container.js-product-container {
-      width: 80%;
-    }*/
-}
-
-@media (max-width: 662px) {
-  #products .products, .featured-products .products, .product-accessories .products {
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    align-content: stretch;
-  }
 }
 
 /*TABLETS Y PHABLETS*/
@@ -850,12 +828,6 @@ pre code {
   }
   .hidden-md-up.text-sm-center.mobile {
     padding: 0 2em;
-  }
-}
-@media (min-width: 768px) {
-  body#checkout #header .header-nav .logo { /*Solo afecta al proceso de compra*/
-    width: auto; 
-    max-height: 4.375rem;
   }
 }
 /*TABLETS*/
@@ -981,7 +953,7 @@ pre code {
   margin-left: -15px;
 }
 .row::after {
-  /*content: "";*/
+  content: "";
   display: table;
   clear: both;
 }
@@ -1718,9 +1690,7 @@ pre code {
       float: left;
       width: 25%; 
   }
-  #main .wishlist-products-container .wishlist-products-container-header .sort-by-row .col-md-3 {
-    width: 35%;
-}
+  
   .col-md-4 {
       float: left;
       width: 33.33333%;
@@ -1732,7 +1702,6 @@ pre code {
   .col-md-6 {
       float: left;
       /*width: 50%;*/
-      
   }
   #main #content form .form-group .col-md-6 {
     width: 50%;
@@ -4242,12 +4211,6 @@ tbody.collapse.in {
     max-width: 150%;
     height: max-content;
   }
-  .product-container .col-md-6 {
-    padding-top: 2rem;
-  }
-  #module-blockwishlist-lists section#main { /*Para darle espacio arriba en la lista de deseos en versión móvil*/
-    padding-top: 2em;
-  }
 }
 @media (min-width: 768px) {
   .navbar-toggleable-sm {
@@ -6698,24 +6661,6 @@ a:hover {
 .text-sm-center a:hover {
   color: #ffffff;
 }
-.page-my-account .page-footer .text-sm-center {
-  margin: 2em;
-}
-.page-my-account .page-footer .text-sm-center a { /*Cerrar sesión dentro de panel de usuario*/
-  color: #232323;
-  text-decoration: none;
-  padding: 0.5rem 1.25rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #800000;
-  border-color: rgba(0, 0, 0, 0);
-}
-.page-my-account .page-footer .text-sm-center a:hover {
-  color: #fff;
-  background-color: #ef8484;
-  border-color: rgba(0, 0, 0, 0);
-}
 p,
 .page-content.page-cms ul {
   font-size: 0.9375rem;
@@ -6928,7 +6873,6 @@ textarea:active:-moz-placeholder {
   display: inline-block;
   float: left;
   width: auto;
-  min-width: 71px; /*En la página de producto, que no se separe la caja de cantidad de las flechas*/
 }
 .bootstrap-touchspin input:focus {
   outline: none;
@@ -7586,7 +7530,10 @@ body#checkout #header .header-nav {
   margin-bottom: 0;
   border: none;
 }
-
+body#checkout #header .header-nav .logo {
+  width: auto;
+  max-height: 4.375rem;
+}
 body#checkout #header .header-nav #_desktop_contact_link #contact-link {
   margin-top: 0;
    
@@ -8303,15 +8250,11 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
 #authentication .radio-inline .custom-radio {
   margin-right: 0;
 }
-.page-customer-account #content { /*En Mis pedidos, dentro de la cuenta de usuario*/
+.page-customer-account #content {
   padding: 1rem;
   background: #fff;
   font-size: 0.875rem;
   color: #7a7a7a;
-  width: 80%;
-  margin: 1rem auto;
-  border: 2px solid #800000;
-  border-radius: 6px;
 }
 .page-customer-account #content .order-actions a {
   padding: 0 0.125rem;
@@ -11541,7 +11484,6 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
 #header .header-nav .user-info {
   margin-top: 0.9375rem;
   margin-left: 2.5rem;
-  margin-right: 2rem;
   text-align: right;
   white-space: nowrap;
 }
@@ -11852,44 +11794,6 @@ div#contact-infos a:hover{
 h1.step-title.js-step-title.h3 {
   color: #232323;
 }
-/*#wrapper .container #content-wrapper #content .row .cart-grid-body {
+#wrapper .container #content-wrapper #content .row .cart-grid-body {
   margin-left: 15%
-}*/
-.wishlist-container { /*Afecta a las listas de listas de deseos*/
-  width: 80%;
-  margin: auto;
-  padding: 1rem;
-  border: 2px solid #800000;
-  border-radius: 6px;
-}
-.wishlist-products-container { /*Afecta a la lista de deseos*/
-  width: 80%;
-  margin: auto;
-}
-.wishlist-products-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#main #content .alert-info {
-  width: 80%;
-  margin: auto;
-}
-#module-ps_emailalerts-account footer.page-footer {
-  margin: 2rem;
-}
-section.product-accessories.clearfix { /*Para centrar los productos recomendados dentro de la página de un producto*/
-  width: 80%;
-  margin: auto;
-}
-#product #main .featured-products { /*Afecta a productos más vistos dentro de la página de un producto*/
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-#product #main .featured-products h2 {
-  padding-bottom: 2em; 
-}
-#contact #content .contact-form section.form-fields {
-  display: grid;
 }
