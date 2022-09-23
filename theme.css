@@ -847,12 +847,16 @@ pre code {
     padding: 0 2em;
   }
 }
-@media (max-width: 768) {
+@media (max-width: 768px) {
   #contact #left-column { /*Para la columna de la izquierda en Contacte con nosotros*/
     min-width: 80%
   }
   #contact #left-column { /*Para la columna de la izquierda en Contacte con nosotros*/
     min-width: 200px;
+  }
+  #my-account section#wrapper, #addresses section#wrapper, #identity section#wrapper, #history section#wrapper, #order-slip section#wrapper, #module-ps_emailalerts-account section#wrapper { /*Para quitar linea blanca en mi cuenta*/
+    margin-top: -25px;
+    padding-top: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -11920,4 +11924,8 @@ section.product-accessories.clearfix { /*Para centrar los productos recomendados
 #order-confirmation #content-wrapper {
   width: 95%;
   margin: auto;
+}
+#addresses footer.page-footer {
+  margin-bottom: 1.563rem;
+  margin-left: 1.563rem;
 }
