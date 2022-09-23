@@ -9628,6 +9628,10 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
       border: none;
       box-shadow: none;
   }
+  #order-confirmation .card {
+    background-color: #fff;
+    padding: 3%;
+  }
 }
 @media (max-width: 991px) {
   #products .products {
@@ -11909,4 +11913,11 @@ section.product-accessories.clearfix { /*Para centrar los productos recomendados
 }
 #category #left-column { /*Para quitar la columna de la izquierda en la sección de categorías*/
   display: none;
+}
+#order-confirmation .col-md-12 h3, #order-confirmation #content .row .h3 {
+  color: #232323;
+}
+#order-confirmation #content-wrapper {
+  width: 95%;
+  margin: auto;
 }
