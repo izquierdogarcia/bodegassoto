@@ -11002,7 +11002,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
 @media (max-width: 767px) {
   .block-contact #contact-infos {
       padding: 0.625rem;
-      padding-top: 0;
+      /*padding-top: 0;*/ /*Para darle aire a la información de la tienda en el pie de página*/
   }
 }
 .linklist .blockcms-title a {
@@ -11932,4 +11932,7 @@ section.product-accessories.clearfix { /*Para centrar los productos recomendados
 #view .wishlist-products-container { /*Para la página de lista de deseos*/
   width: 95%;
   margin: auto;
+}
+#pagenotfound #search_widget form {
+  margin-left: 13px;
 }
