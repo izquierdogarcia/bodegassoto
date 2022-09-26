@@ -9895,7 +9895,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
 .has-discount p,
 .has-discount .page-content.page-cms ul,
 .page-content.page-cms .has-discount ul {
-  color: #f39d72;
+  color: #f3e004;
 }
 .has-discount .discount {
   display: inline-block;
@@ -9905,7 +9905,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
-  background: #f39d72;
+  background: #f3e004;
 }
 .product-unit-price {
   margin-bottom: 0;
@@ -10339,7 +10339,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
 .product-flags li.product-flag.discount-percentage,
 .product-flags li.product-flag.discount-amount,
 .product-flags li.product-flag.discount {
-  background-color: #f39d72;
+  background-color: #f3e004;
 }
 .product-flags li.product-flag.on-sale {
   -webkit-box-ordinal-group: 0;
@@ -10348,7 +10348,7 @@ body#checkout #hook-display-after-carrier > [class^="col"].links .row > [class^=
   width: 100%;
   margin-top: 0 !important;
   text-align: center;
-  background: #f39d72;
+  background: #f3e004;
 }
 .product-customization {
   margin: 2.5rem 0;
@@ -11928,4 +11928,8 @@ section.product-accessories.clearfix { /*Para centrar los productos recomendados
 #addresses footer.page-footer {
   margin-bottom: 1.563rem;
   margin-left: 1.563rem;
+}
+#view .wishlist-products-container { /*Para la página de lista de deseos*/
+  width: 95%;
+  margin: auto;
 }
